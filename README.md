@@ -3,7 +3,7 @@ Avatars for Android
 
 This project provides a easy way to build avatar compositions for Android applications, as you can see in the screenshot.
 
-![Screenshot]()
+![Screenshot](https://github.com/Pedroafa/avatar-android/blob/master/screenshot.png)
 
 ## How to Use
 
@@ -11,7 +11,7 @@ Inside the layout, you only needs a ImageView in order to show the avatar.
 
 ``` xml
     <ImageView
-        android:id="@+id/doubleSquaredAvatar"
+        android:id="@+id/avatar"
         android:layout_height="fill_parent"
         android:layout_width="fill_parent"/>
 ```
@@ -32,9 +32,15 @@ There are this types of compositions:
 * QuadrupleSquaredAvatarDrawable
 
 ``` java
-    Drawable doubleSquaredAvatarDrawable = avatarDrawableFactory.getSquaredAvatarDrawable(avatar, avatar);
-    ImageView doubleSquaredAvatarView = (ImageView)rootView.findViewById(R.id.doubleSquaredAvatar);
-    doubleSquaredAvatarView.setImageDrawable(doubleSquaredAvatarDrawable);
+BitmapFactory.Options options = new BitmapFactory.Options();
+options.inMutable = false;
+Bitmap avatar = BitmapFactory.decodeResource(getResources(), R.drawable.avatar, options);
+
+AvatarDrawableFactory avatarFactory = new AvatarDrawableFactory(getResources());
+
+Drawable avatarDrawable = avatarFactory.getSquaredAvatarDrawable(avatar, avatar);
+ImageView avatarView = (ImageView)rootView.findViewById(R.id.avatar);
+avatarView.setImageDrawable(avatarDrawable);
 ```
 
 ## Contributors
