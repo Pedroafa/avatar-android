@@ -3,7 +3,7 @@ Avatars for Android
 
 This project provides a easy way to build avatar compositions for Android applications, as you can see in the screenshot.
 
-![Screenshot](https://github.com/Pedroafa/avatar-android/blob/master/screenshot.png)
+![Screenshot](https://github.com/Pedroafa/avatar-android/blob/master/screenshot.png?raw=true)
 
 ## How to Use
 
