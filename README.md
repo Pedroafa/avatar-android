@@ -1,9 +1,30 @@
-Avatars for Android
+Avatars for Android [![Maven Central](https://maven-badges.herokuapp.com/maven-central/net.sectorsieteg/avatars/badge.svg)](https://maven-badges.herokuapp.com/maven-central/net.sectorsieteg/avatars)
 ==============
 
 This project provides a easy way to build avatar compositions for Android applications, as you can see in the screenshot.
 
 ![Screenshot](https://github.com/Pedroafa/avatar-android/blob/master/screenshot.png?raw=true)
+
+## Usage
+
+Declare it into your pom.xml
+
+```xml
+<dependency>
+    <groupId>net.sectorsieteg</groupId>
+    <artifactId>avatars</artifactId>
+    <version>1.0.0</version>
+    <type>aar</type>
+</dependency>
+```
+
+Or into your build.gradle
+
+```groovy
+dependencies {
+    compile 'net.sectorsieteg:avatars:1.0.0'
+}
+```
 
 ## How to Use
 
